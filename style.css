@@ -1,0 +1,167 @@
+/*Configurações Gerais do Site*/
+:root{
+    --preto: rgb(26, 4, 4);
+    --branco: rgb(255, 255, 255);
+    --cinza: rgb(209, 208, 208);
+    --verde: rgb(18, 139, 18);
+    --verde-claro: rgb(89, 196, 89);
+}
+/*Fonts do Site*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: white;
+}
+header{
+    background-color: green; 
+    color: var(--branco);
+    padding: 1%;
+    position: fixed;
+    width: 100%;
+}
+nav{
+    display: block;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding-right: 20px;
+}
+a:hover{
+    color: rgb(233, 225, 225);
+    transition: 0.5s ease;
+}
+footer{
+    background-color: var(--verde-claro); 
+    color: var(--branco);
+    padding: 1%;
+    text-align: center;
+}
+body{
+    background-color: var(--cinza); /*Cor de fundo da página*/
+}
+
+main{
+    background-color: rgb(87, 134, 17);
+    padding: 1%;
+    margin: auto;
+    max-width: 1024px; /*Centralizando o conteudo do main no body*/
+    border-radius: 10px;
+    box-shadow: 0.5px 0.5px 10px 0px var(--verde); /*desfoque nas bordas do body*/
+}
+
+aside{
+    background-color: var(--branco);
+    padding: 1%;
+    margin: auto;
+    max-width: 1024px; 
+    border-radius: 10px;
+    box-shadow: 0.5px 0.5px 10px 0px var(--verde);       
+}
+
+/*Configurações de Títulos Headlines*/
+h1{
+    font-size: 2em;
+    margin-top: 3%;
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+h2{
+    font-size: 1.5em;
+    
+}
+h3{
+    font-size: 2.5em;
+    font-family: "Merriweather", serif;
+}
+h4{
+    font-size: 1em;
+}
+h1,h2,h3,h4,h5,h6{
+    padding-top: 0.25%;
+    padding-bottom: 0.25%;
+}
+
+/*Configurações de Imagens*/
+
+img{
+    width: 100%;
+    padding-top: 2%;
+}
+/*Configurações de Parágrafos*/
+
+p{
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+/*Configurações de Parágrafos para dispositivos móveis*/
+
+@media(min-width: 360px) and (max-width: 1024px){
+    p{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    }
+}
+
+/*Espaçamento com Divs*/
+.separador{
+    margin-top: 5%;
+}
+.separador-conteudo{
+    margin-top: 1%;
+}
+
+/*Espaçamento com Divs para Mobile*/
+@media(min-width: 320px) and (max-width: 1024px){
+    .separador{
+    margin-top: 9%;
+    }
+    .separador-conteudo{
+    margin-top: 3%;
+    }
+}
+/*Configurações Grade Conteudo*/
+#grid-conteudo{
+    background-color: var(--cinza);
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    max-width: 1024px;
+    margin: auto;
+    gap: 2px;
+}
+.grid div{
+    background-color: var(--branco);
+    text-align: center;
+    padding: 2px;
+}
+/*Configurações para Botões de Ação*/
+button{
+    padding: 8px 20px 8px 20px;
+    background-color: rgb(44, 167, 44);
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.3em;
+    display: block;
+    margin: auto;
+}
+button:hover{
+    background-color: green;
+    transition: 0.4s ease;
+    text-shadow: 1px 2px black;
+}
