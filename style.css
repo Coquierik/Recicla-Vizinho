@@ -42,22 +42,33 @@ a:hover{
     transition: 0.5s ease;
 }
 footer{
-    background-color: var(--verde-claro); 
+    background-color: green; 
     color: var(--branco);
     padding: 1%;
     text-align: center;
 }
 body{
     background-color: var(--cinza); /*Cor de fundo da página*/
+    background-image: url('img/background-img2.avif');
 }
 
 main{
-    background-color: rgb(87, 134, 17);
+    background-color: rgb(81, 82, 46);
     padding: 1%;
     margin: auto;
     max-width: 1024px; /*Centralizando o conteudo do main no body*/
     border-radius: 10px;
     box-shadow: 0.5px 0.5px 10px 0px var(--verde); /*desfoque nas bordas do body*/
+}
+picture{
+    max-width: 70%;
+    display: block;
+    margin: 0 auto;
+
+    padding-bottom: 3%;
+}
+img{
+    border-radius: 5%;
 }
 
 aside{
@@ -80,6 +91,7 @@ h1{
 }
 h2{
     font-size: 1.5em;
+    text-align: center;
     
 }
 h3{
@@ -92,6 +104,11 @@ h4{
 h1,h2,h3,h4,h5,h6{
     padding-top: 0.25%;
     padding-bottom: 0.25%;
+}
+p{
+    font-size: 1.2em;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
 }
 
 /*Configurações de Imagens*/
