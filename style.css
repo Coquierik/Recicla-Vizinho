@@ -70,7 +70,6 @@ picture{
 img{
     border-radius: 5%;
 }
-
 aside{
     background-color: var(--branco);
     padding: 1%;
@@ -181,4 +180,78 @@ button:hover{
     background-color: green;
     transition: 0.4s ease;
     text-shadow: 1px 2px black;
+}
+/*Configurações do formulário*/
+.contact-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.contact-left-title{
+    font-weight: 600;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.contact-left-title hr{
+    border: none;
+    width:400px;
+    height: 5px;
+    background-color: green;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contact-input{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color:#666;
+    border-radius: 50px;
+}
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+.contact-input:focus{
+    border: 2px solid green;
+}
+.contact-input::placeholder{
+    color: #a9a9a9;
+}
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 15px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, green, yellowgreen);
+    cursor: pointer;
+}
+.contact-left button img{
+    height: 15px;
+}
+.contact-right img{
+    width: 400px;
+}
+@media (max-width: 800px){
+    .contact-inputs{
+        width: 80vw;
+    }
+    .contact-right{
+        display: none;
+    }
 }
